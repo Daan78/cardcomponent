@@ -1,0 +1,19 @@
+html, body {
+      position: relative;
+}
+body {
+      height: 100%;
+      display: block;
+      padding: 90px 0;
+      background-color: $color-gray;
+      color: $color-trans-white;
+      font-family: $font-sub;
+      display: flex;
+      @include for-size( desktop ) {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 90px 20px;
+      }
+}

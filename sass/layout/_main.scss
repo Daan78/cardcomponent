@@ -1,0 +1,71 @@
+.container {
+      display: flex;
+      flex-direction: column;
+      max-width: 330px;
+      width: 90%;
+      height: auto;
+      justify-content: center;
+      margin: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all .1s;
+      .card {
+            width: 100%;
+            padding: 47px 52px 49px;
+            font-size: 15px;
+            img {
+                  display: block;
+                  margin-bottom: 36px;
+            }
+            h2 {
+                  font-family: $font-main;
+                  color: $color-gray;
+                  font-size: 40px;
+                  margin-bottom: 26px;
+                  text-transform: uppercase;
+            }
+            p {
+                  line-height: 25px;
+                  margin-bottom: 28px;
+            }
+            &__sedans {
+                  background-color: $color-orange;
+                  .btn {
+                        color: $color-orange;
+                  }
+            }
+            &__suvs {
+                  background-color: $color-cyan;
+                  .btn {
+                        color: $color-cyan;
+                  }
+            }
+            &__luxury {
+                  background-color: $color-dark-cyan;
+                  .btn {
+                        color: $color-dark-cyan;
+                  }
+            }
+            .btn:hover {
+                  color: $color-gray;
+            }
+      }
+      @include for-size( desktop ) {
+            flex-direction: row;
+            width: 100%;
+            max-width: 920px;
+            .card {
+                  width: 33.33333333333333%;
+                  padding: 48px 49px 49px;
+                  img {
+                        margin-bottom: 36px;
+                  }
+                  h2 {
+                        margin-bottom: 26px;
+                  }
+                  p {
+                        margin-bottom: 82px;
+                  }
+            }
+      }
+}

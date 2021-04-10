@@ -1,0 +1,32 @@
+.original-design {
+      &--desktop {
+            position: absolute;
+            width: 1241px;
+            height: 690px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url( ./design/desktop-design_edit.jpg );
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: .4;
+            // &.active {
+            //       background-image: url( /design/desktop-active-state.jpg );
+            // }
+      }
+      &--mobile {
+            position: absolute;
+            width: 375px;
+            height: 1512px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url( ./design/mobile-design.jpg );
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: .4;
+            // &.active {
+            //       background-image: url( /design/mobile-active-state.jpg );
+            // }
+      }
+}

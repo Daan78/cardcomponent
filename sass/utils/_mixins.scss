@@ -1,0 +1,8 @@
+// Breakpoints
+// Only need 1 breakpoint for this design
+// Set the width later
+@mixin for-size( $size ) {
+      @if $size == desktop {
+            @media ( min-width: 790px ) { @content; }
+      }
+}
